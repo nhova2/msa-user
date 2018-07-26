@@ -1,0 +1,66 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "amimateur",
+            "otherEntityName": "animateur",
+            "otherEntityRelationshipName": "agreement"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "fournisseur",
+            "otherEntityName": "fournisseur",
+            "otherEntityRelationshipName": "agreement"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "agreementId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "numeroAgrement",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dateAttibution",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateDebValidite",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateFinValidite",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "status",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "userCreated",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userLastModif",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateLastModif",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180726110745",
+    "entityTableName": "agreement",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "acteur"
+}

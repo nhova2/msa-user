@@ -1,0 +1,72 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "acteurTypeBanque",
+            "otherEntityName": "acteurType",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "banque"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "bcontacts",
+            "otherEntityName": "contact",
+            "otherEntityRelationshipName": "banque"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "banqueId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "raisonSociale",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "siteWeb",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telephone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "capital",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "chiffreDaffaire",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userCreated",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userLastModif",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateLastModif",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180726110739",
+    "entityTableName": "banque",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "acteur"
+}

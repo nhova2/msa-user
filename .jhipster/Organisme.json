@@ -1,0 +1,68 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "acteurTypeOrganisme",
+            "otherEntityName": "acteurType",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "organisme"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "ocontacts",
+            "otherEntityName": "contact",
+            "otherEntityRelationshipName": "organisme"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "organismeId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "raisonSociale",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "typeOrganisme",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "domaineActivite",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telephone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userCreated",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userLastModif",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateLastModif",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180726110737",
+    "entityTableName": "organisme",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "acteur"
+}

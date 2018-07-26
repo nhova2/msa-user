@@ -1,0 +1,96 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "foclientBanque",
+            "otherEntityName": "banque",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "fournisseur"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "foclientOrga",
+            "otherEntityName": "organisme",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "fournisseur"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "acteurTypeFournisseur",
+            "otherEntityName": "acteurType",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "fournisseur"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "fcontacts",
+            "otherEntityName": "contact",
+            "otherEntityRelationshipName": "fournisseur"
+        },
+        {
+            "relationshipName": "agreement",
+            "otherEntityName": "agreement",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipName": "animateurFournisseur",
+            "otherEntityName": "animateurFournisseur",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "fournisseurId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "prenom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "telephone",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userCreated",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userLastModif",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateLastModif",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180726110741",
+    "entityTableName": "fournisseur",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "acteur"
+}

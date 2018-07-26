@@ -1,0 +1,21 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "idActeurType",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "libelleActeur",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20180726110744",
+    "entityTableName": "acteur_type",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "acteur"
+}

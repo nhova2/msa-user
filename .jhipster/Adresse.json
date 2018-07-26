@@ -1,0 +1,49 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "adresseId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "rue",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "codePostal",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "ville",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "pays",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "userCreated",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "userLastModif",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "dateCreated",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dateLastModif",
+            "fieldType": "LocalDate"
+        }
+    ],
+    "changelogDate": "20180726110743",
+    "entityTableName": "adresse",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "acteur"
+}

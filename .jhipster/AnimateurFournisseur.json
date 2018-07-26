@@ -1,0 +1,30 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "anFournisseur",
+            "otherEntityName": "fournisseur",
+            "otherEntityRelationshipName": "animateurFournisseur"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "anAnimateur",
+            "otherEntityName": "animateur",
+            "otherEntityRelationshipName": "animateurFournisseur"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "niveauAgreement",
+            "fieldType": "Integer"
+        }
+    ],
+    "changelogDate": "20180726171400",
+    "entityTableName": "animateur_fournisseur",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "microserviceName": "acteur"
+}
